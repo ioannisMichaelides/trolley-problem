@@ -1,0 +1,42 @@
+digraph TrolleyDecision {
+  rankdir=TB;
+  node [shape=rectangle, fontname="Helvetica", fontsize=12];
+
+  Start [shape=oval, label="Start"];
+
+  Input [label="Input group data:\nDefine Track P and Track Q"];
+
+  CountBox [label="Assign Count (c):\nNumber of people per group"];
+  CountBox_Q [label="Assign Count (c):\nNumber of people per group"];
+
+  AgeW [label="Assign Age Ratio (R): per person\nUse integer equivalences ONLY\nExamples:\n1 Children = 2 Adult\n2 Teens = 3 Adults\n2 Elderly = 1 Adults\nAggregate R in Adult-equivalents via integer ratios"];
+  AgeW_Q [label="Assign Age Ratio (R): per person\nUse integer equivalences ONLY\nExamples:\n1 Children = 2 Adult\n2 Teens = 3 Adults\n2 Elderly = 1 Adults\nAggregate R in Adult-equivalents via integer ratios"];
+
+  Social [label="Assign Social Ratio (SR): per person\nUse integer equivalences ONLY\nExamples:\n2 Average citizens = 1 Doctor\n2 Average citizens = 1 Scientist\n3 Average citizens = 2 Philanthropists\n4 Average citizens = 3 non-impactful Workers\nAggregate SR in Average-citizen equivalents via integer ratios"];
+  Social_Q [label="Assign Social Ratio (SR): per person\nUse integer equivalences ONLY\nExamples:\n2 Average citizens = 1 Doctor\n2 Average citizens = 1 Scientist\n3 Average citizens = 2 Philanthropists\n4 Average citizens = 4 non-impactful Workers\nAggregate SR in Average-citizen equivalents via integer ratios"];
+
+  Conf [label="Assign Confidence (k):\nCertainty(90-100%) = 1.0\nUncertain(50-89%) = 0.5\nLikely false(10-49%) = 0.25\nFalse(0-9%) = 0"];
+  Conf_Q [label="Assign Confidence (k):\nCertainty(90-100%) = 1.0\nUncertain(50-89%) = 0.5\nLikely false(10-49%) = 0.25\nFalse(0-9%) = 0"];
+
+  RIP_P [label="Compute RIP(P):\nRIP(P) = (c + R + SR)"];
+  RIP_Q [label="Compute RIP(Q):\nRIP(Q) = (c + R + SR)"];
+
+  Weight [label="Apply confidence:\nP_w = RIP(P) × k(P)\nQ_w = RIP(Q) × k(Q)"];
+
+  Ucalc [label="Calculate difference:\nU = P_w - Q_w"];
+
+  Decide [shape=diamond, label="Is U > 0?"];
+  
+  Switch [label="SWITCH\n(save P)"];
+
+  End [shape=oval, label="End"];
+
+  Start -> Input -> CountBox -> AgeW -> Social -> RIP_P -> Conf -> Weight -> Ucalc -> Decide;
+  Input -> CountBox_Q -> AgeW_Q -> Social_Q -> RIP_Q -> Conf_Q -> Weight;
+  Decide -> End [label="yes"];
+  Decide -> Switch [label="no"];
+  Switch -> End;
+
+  labelloc="t";
+  label="Ethical Trolley Decision Model (Integer Ratio–based)";
+}
