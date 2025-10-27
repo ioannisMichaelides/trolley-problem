@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="718pt" height="1111pt" viewBox="0.00 0.00 718.00 1111.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1106.8)">
+<title>TrolleyDecision</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1106.8 713.51,-1106.8 713.51,4 -4,4"/>
+<text xml:space="preserve" text-anchor="middle" x="354.76" y="-1086.2" font-family="Times,serif" font-size="14.00">Ethical Trolley Decision Model (Integer Ratio–based)</text>
+<!-- Start -->
+<g id="node1" class="node">
+<title>Start</title>
+<ellipse fill="none" stroke="black" cx="397.76" cy="-1060" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="397.76" y="-1056.4" font-family="Helvetica,sans-Serif" font-size="12.00">Start</text>
+</g>
+<!-- Input -->
+<g id="node2" class="node">
+<title>Input</title>
+<polygon fill="none" stroke="black" points="480.12,-1005 315.4,-1005 315.4,-968.2 480.12,-968.2 480.12,-1005"/>
+<text xml:space="preserve" text-anchor="middle" x="397.76" y="-990.2" font-family="Helvetica,sans-Serif" font-size="12.00">Input group data:</text>
+<text xml:space="preserve" text-anchor="middle" x="397.76" y="-975.8" font-family="Helvetica,sans-Serif" font-size="12.00">Define Track P and Track Q</text>
+</g>
+<!-- Start&#45;&gt;Input -->
+<g id="edge1" class="edge">
+<title>Start-&gt;Input</title>
+<path fill="none" stroke="black" d="M397.76,-1041.72C397.76,-1034.25 397.76,-1025.31 397.76,-1016.87"/>
+<polygon fill="black" stroke="black" points="401.26,-1016.98 397.76,-1006.98 394.26,-1016.98 401.26,-1016.98"/>
+</g>
+<!-- CountBox -->
+<g id="node3" class="node">
+<title>CountBox</title>
+<polygon fill="none" stroke="black" points="389.8,-931.2 223.71,-931.2 223.71,-894.4 389.8,-894.4 389.8,-931.2"/>
+<text xml:space="preserve" text-anchor="middle" x="306.76" y="-916.4" font-family="Helvetica,sans-Serif" font-size="12.00">Assign Count (c):</text>
+<text xml:space="preserve" text-anchor="middle" x="306.76" y="-902" font-family="Helvetica,sans-Serif" font-size="12.00">Number of people per group</text>
+</g>
+<!-- Input&#45;&gt;CountBox -->
+<g id="edge2" class="edge">
+<title>Input-&gt;CountBox</title>
+<path fill="none" stroke="black" d="M375.26,-967.85C364.11,-959.05 350.45,-948.27 338.27,-938.66"/>
+<polygon fill="black" stroke="black" points="340.51,-935.98 330.5,-932.53 336.18,-941.47 340.51,-935.98"/>
+</g>
+<!-- CountBox_Q -->
+<g id="node4" class="node">
+<title>CountBox_Q</title>
+<polygon fill="none" stroke="black" points="588.8,-931.2 422.71,-931.2 422.71,-894.4 588.8,-894.4 588.8,-931.2"/>
+<text xml:space="preserve" text-anchor="middle" x="505.76" y="-916.4" font-family="Helvetica,sans-Serif" font-size="12.00">Assign Count (c):</text>
+<text xml:space="preserve" text-anchor="middle" x="505.76" y="-902" font-family="Helvetica,sans-Serif" font-size="12.00">Number of people per group</text>
+</g>
+<!-- Input&#45;&gt;CountBox_Q -->
+<g id="edge10" class="edge">
+<title>Input-&gt;CountBox_Q</title>
+<path fill="none" stroke="black" d="M424.45,-967.85C438.08,-958.79 454.86,-947.64 469.63,-937.82"/>
+<polygon fill="black" stroke="black" points="471.34,-940.88 477.73,-932.43 467.47,-935.05 471.34,-940.88"/>
+</g>
+<!-- AgeW -->
+<g id="node5" class="node">
+<title>AgeW</title>
+<polygon fill="none" stroke="black" points="361.17,-857.4 78.35,-857.4 78.35,-748.6 361.17,-748.6 361.17,-857.4"/>
+<text xml:space="preserve" text-anchor="middle" x="219.76" y="-842.6" font-family="Helvetica,sans-Serif" font-size="12.00">Assign Age Ratio (R): per person</text>
+<text xml:space="preserve" text-anchor="middle" x="219.76" y="-828.2" font-family="Helvetica,sans-Serif" font-size="12.00">Use integer equivalences ONLY</text>
+<text xml:space="preserve" text-anchor="middle" x="219.76" y="-813.8" font-family="Helvetica,sans-Serif" font-size="12.00">Examples:</text>
+<text xml:space="preserve" text-anchor="middle" x="219.76" y="-799.4" font-family="Helvetica,sans-Serif" font-size="12.00">1 Children = 2 Adult</text>
+<text xml:space="preserve" text-anchor="middle" x="219.76" y="-785" font-family="Helvetica,sans-Serif" font-size="12.00">2 Teens = 3 Adults</text>
+<text xml:space="preserve" text-anchor="middle" x="219.76" y="-770.6" font-family="Helvetica,sans-Serif" font-size="12.00">2 Elderly = 1 Adults</text>
+<text xml:space="preserve" text-anchor="middle" x="219.76" y="-756.2" font-family="Helvetica,sans-Serif" font-size="12.00">Aggregate R in Adult-equivalents via integer ratios</text>
+</g>
+<!-- CountBox&#45;&gt;AgeW -->
+<g id="edge3" class="edge">
+<title>CountBox-&gt;AgeW</title>
+<path fill="none" stroke="black" d="M292.39,-894C286.12,-886.23 278.35,-876.61 270.25,-866.57"/>
+<polygon fill="black" stroke="black" points="273.04,-864.44 264.03,-858.86 267.59,-868.84 273.04,-864.44"/>
+</g>
+<!-- AgeW_Q -->
+<g id="node6" class="node">
+<title>AgeW_Q</title>
+<polygon fill="none" stroke="black" points="670.17,-857.4 387.35,-857.4 387.35,-748.6 670.17,-748.6 670.17,-857.4"/>
+<text xml:space="preserve" text-anchor="middle" x="528.76" y="-842.6" font-family="Helvetica,sans-Serif" font-size="12.00">Assign Age Ratio (R): per person</text>
+<text xml:space="preserve" text-anchor="middle" x="528.76" y="-828.2" font-family="Helvetica,sans-Serif" font-size="12.00">Use integer equivalences ONLY</text>
+<text xml:space="preserve" text-anchor="middle" x="528.76" y="-813.8" font-family="Helvetica,sans-Serif" font-size="12.00">Examples:</text>
+<text xml:space="preserve" text-anchor="middle" x="528.76" y="-799.4" font-family="Helvetica,sans-Serif" font-size="12.00">1 Children = 2 Adult</text>
+<text xml:space="preserve" text-anchor="middle" x="528.76" y="-785" font-family="Helvetica,sans-Serif" font-size="12.00">2 Teens = 3 Adults</text>
+<text xml:space="preserve" text-anchor="middle" x="528.76" y="-770.6" font-family="Helvetica,sans-Serif" font-size="12.00">2 Elderly = 1 Adults</text>
+<text xml:space="preserve" text-anchor="middle" x="528.76" y="-756.2" font-family="Helvetica,sans-Serif" font-size="12.00">Aggregate R in Adult-equivalents via integer ratios</text>
+</g>
+<!-- CountBox_Q&#45;&gt;AgeW_Q -->
+<g id="edge11" class="edge">
+<title>CountBox_Q-&gt;AgeW_Q</title>
+<path fill="none" stroke="black" d="M509.55,-894C511.1,-886.78 512.98,-877.96 514.95,-868.69"/>
+<polygon fill="black" stroke="black" points="518.32,-869.67 516.99,-859.16 511.48,-868.21 518.32,-869.67"/>
+</g>
+<!-- Social -->
+<g id="node7" class="node">
+<title>Social</title>
+<polygon fill="none" stroke="black" points="345.51,-711.6 0,-711.6 0,-588.4 345.51,-588.4 345.51,-711.6"/>
+<text xml:space="preserve" text-anchor="middle" x="172.76" y="-696.8" font-family="Helvetica,sans-Serif" font-size="12.00">Assign Social Ratio (SR): per person</text>
+<text xml:space="preserve" text-anchor="middle" x="172.76" y="-682.4" font-family="Helvetica,sans-Serif" font-size="12.00">Use integer equivalences ONLY</text>
+<text xml:space="preserve" text-anchor="middle" x="172.76" y="-668" font-family="Helvetica,sans-Serif" font-size="12.00">Examples:</text>
+<text xml:space="preserve" text-anchor="middle" x="172.76" y="-653.6" font-family="Helvetica,sans-Serif" font-size="12.00">2 Average citizens = 1 Doctor</text>
+<text xml:space="preserve" text-anchor="middle" x="172.76" y="-639.2" font-family="Helvetica,sans-Serif" font-size="12.00">2 Average citizens = 1 Scientist</text>
+<text xml:space="preserve" text-anchor="middle" x="172.76" y="-624.8" font-family="Helvetica,sans-Serif" font-size="12.00">3 Average citizens = 2 Philanthropists</text>
+<text xml:space="preserve" text-anchor="middle" x="172.76" y="-610.4" font-family="Helvetica,sans-Serif" font-size="12.00">4 Average citizens = 3 non-impactful Workers</text>
+<text xml:space="preserve" text-anchor="middle" x="172.76" y="-596" font-family="Helvetica,sans-Serif" font-size="12.00">Aggregate SR in Average-citizen equivalents via integer ratios</text>
+</g>
+<!-- AgeW&#45;&gt;Social -->
+<g id="edge4" class="edge">
+<title>AgeW-&gt;Social</title>
+<path fill="none" stroke="black" d="M203.05,-748.34C200.48,-740.05 197.78,-731.38 195.1,-722.78"/>
+<polygon fill="black" stroke="black" points="198.49,-721.9 192.18,-713.4 191.81,-723.98 198.49,-721.9"/>
+</g>
+<!-- Social_Q -->
+<g id="node8" class="node">
+<title>Social_Q</title>
+<polygon fill="none" stroke="black" points="709.51,-711.6 364,-711.6 364,-588.4 709.51,-588.4 709.51,-711.6"/>
+<text xml:space="preserve" text-anchor="middle" x="536.76" y="-696.8" font-family="Helvetica,sans-Serif" font-size="12.00">Assign Social Ratio (SR): per person</text>
+<text xml:space="preserve" text-anchor="middle" x="536.76" y="-682.4" font-family="Helvetica,sans-Serif" font-size="12.00">Use integer equivalences ONLY</text>
+<text xml:space="preserve" text-anchor="middle" x="536.76" y="-668" font-family="Helvetica,sans-Serif" font-size="12.00">Examples:</text>
+<text xml:space="preserve" text-anchor="middle" x="536.76" y="-653.6" font-family="Helvetica,sans-Serif" font-size="12.00">2 Average citizens = 1 Doctor</text>
+<text xml:space="preserve" text-anchor="middle" x="536.76" y="-639.2" font-family="Helvetica,sans-Serif" font-size="12.00">2 Average citizens = 1 Scientist</text>
+<text xml:space="preserve" text-anchor="middle" x="536.76" y="-624.8" font-family="Helvetica,sans-Serif" font-size="12.00">3 Average citizens = 2 Philanthropists</text>
+<text xml:space="preserve" text-anchor="middle" x="536.76" y="-610.4" font-family="Helvetica,sans-Serif" font-size="12.00">4 Average citizens = 4 non-impactful Workers</text>
+<text xml:space="preserve" text-anchor="middle" x="536.76" y="-596" font-family="Helvetica,sans-Serif" font-size="12.00">Aggregate SR in Average-citizen equivalents via integer ratios</text>
+</g>
+<!-- AgeW_Q&#45;&gt;Social_Q -->
+<g id="edge12" class="edge">
+<title>AgeW_Q-&gt;Social_Q</title>
+<path fill="none" stroke="black" d="M531.6,-748.34C532.03,-740.24 532.48,-731.77 532.92,-723.35"/>
+<polygon fill="black" stroke="black" points="536.41,-723.63 533.45,-713.46 529.42,-723.26 536.41,-723.63"/>
+</g>
+<!-- RIP_P -->
+<g id="node11" class="node">
+<title>RIP_P</title>
+<polygon fill="none" stroke="black" points="272.93,-551.4 140.58,-551.4 140.58,-514.6 272.93,-514.6 272.93,-551.4"/>
+<text xml:space="preserve" text-anchor="middle" x="206.76" y="-536.6" font-family="Helvetica,sans-Serif" font-size="12.00">Compute RIP(P):</text>
+<text xml:space="preserve" text-anchor="middle" x="206.76" y="-522.2" font-family="Helvetica,sans-Serif" font-size="12.00">RIP(P) = (c + R + SR)</text>
+</g>
+<!-- Social&#45;&gt;RIP_P -->
+<g id="edge5" class="edge">
+<title>Social-&gt;RIP_P</title>
+<path fill="none" stroke="black" d="M190.75,-588.13C193.38,-579.26 195.97,-570.49 198.28,-562.69"/>
+<polygon fill="black" stroke="black" points="201.62,-563.71 201.1,-553.13 194.91,-561.73 201.62,-563.71"/>
+</g>
+<!-- RIP_Q -->
+<g id="node12" class="node">
+<title>RIP_Q</title>
+<polygon fill="none" stroke="black" points="601.6,-551.4 467.91,-551.4 467.91,-514.6 601.6,-514.6 601.6,-551.4"/>
+<text xml:space="preserve" text-anchor="middle" x="534.76" y="-536.6" font-family="Helvetica,sans-Serif" font-size="12.00">Compute RIP(Q):</text>
+<text xml:space="preserve" text-anchor="middle" x="534.76" y="-522.2" font-family="Helvetica,sans-Serif" font-size="12.00">RIP(Q) = (c + R + SR)</text>
+</g>
+<!-- Social_Q&#45;&gt;RIP_Q -->
+<g id="edge13" class="edge">
+<title>Social_Q-&gt;RIP_Q</title>
+<path fill="none" stroke="black" d="M535.7,-588.13C535.55,-579.36 535.4,-570.7 535.26,-562.96"/>
+<polygon fill="black" stroke="black" points="538.76,-563.13 535.09,-553.19 531.77,-563.25 538.76,-563.13"/>
+</g>
+<!-- Conf -->
+<g id="node9" class="node">
+<title>Conf</title>
+<polygon fill="none" stroke="black" points="425.63,-477.6 263.88,-477.6 263.88,-397.6 425.63,-397.6 425.63,-477.6"/>
+<text xml:space="preserve" text-anchor="middle" x="344.76" y="-462.8" font-family="Helvetica,sans-Serif" font-size="12.00">Assign Confidence (k):</text>
+<text xml:space="preserve" text-anchor="middle" x="344.76" y="-448.4" font-family="Helvetica,sans-Serif" font-size="12.00">Certainty(90-100%) = 1.0</text>
+<text xml:space="preserve" text-anchor="middle" x="344.76" y="-434" font-family="Helvetica,sans-Serif" font-size="12.00">Uncertain(50-89%) = 0.5</text>
+<text xml:space="preserve" text-anchor="middle" x="344.76" y="-419.6" font-family="Helvetica,sans-Serif" font-size="12.00">Likely false(10-49%) = 0.25</text>
+<text xml:space="preserve" text-anchor="middle" x="344.76" y="-405.2" font-family="Helvetica,sans-Serif" font-size="12.00">False(0-9%) = 0</text>
+</g>
+<!-- Weight -->
+<g id="node13" class="node">
+<title>Weight</title>
+<polygon fill="none" stroke="black" points="497.93,-360.6 369.59,-360.6 369.59,-309.4 497.93,-309.4 497.93,-360.6"/>
+<text xml:space="preserve" text-anchor="middle" x="433.76" y="-345.8" font-family="Helvetica,sans-Serif" font-size="12.00">Apply confidence:</text>
+<text xml:space="preserve" text-anchor="middle" x="433.76" y="-331.4" font-family="Helvetica,sans-Serif" font-size="12.00">P_w = RIP(P) × k(P)</text>
+<text xml:space="preserve" text-anchor="middle" x="433.76" y="-317" font-family="Helvetica,sans-Serif" font-size="12.00">Q_w = RIP(Q) × k(Q)</text>
+</g>
+<!-- Conf&#45;&gt;Weight -->
+<g id="edge7" class="edge">
+<title>Conf-&gt;Weight</title>
+<path fill="none" stroke="black" d="M379.68,-397.13C387.78,-387.96 396.34,-378.3 404.19,-369.42"/>
+<polygon fill="black" stroke="black" points="406.76,-371.8 410.76,-361.99 401.52,-367.16 406.76,-371.8"/>
+</g>
+<!-- Conf_Q -->
+<g id="node10" class="node">
+<title>Conf_Q</title>
+<polygon fill="none" stroke="black" points="608.63,-477.6 446.88,-477.6 446.88,-397.6 608.63,-397.6 608.63,-477.6"/>
+<text xml:space="preserve" text-anchor="middle" x="527.76" y="-462.8" font-family="Helvetica,sans-Serif" font-size="12.00">Assign Confidence (k):</text>
+<text xml:space="preserve" text-anchor="middle" x="527.76" y="-448.4" font-family="Helvetica,sans-Serif" font-size="12.00">Certainty(90-100%) = 1.0</text>
+<text xml:space="preserve" text-anchor="middle" x="527.76" y="-434" font-family="Helvetica,sans-Serif" font-size="12.00">Uncertain(50-89%) = 0.5</text>
+<text xml:space="preserve" text-anchor="middle" x="527.76" y="-419.6" font-family="Helvetica,sans-Serif" font-size="12.00">Likely false(10-49%) = 0.25</text>
+<text xml:space="preserve" text-anchor="middle" x="527.76" y="-405.2" font-family="Helvetica,sans-Serif" font-size="12.00">False(0-9%) = 0</text>
+</g>
+<!-- Conf_Q&#45;&gt;Weight -->
+<g id="edge15" class="edge">
+<title>Conf_Q-&gt;Weight</title>
+<path fill="none" stroke="black" d="M490.88,-397.13C482.22,-387.87 473.09,-378.09 464.72,-369.14"/>
+<polygon fill="black" stroke="black" points="467.4,-366.88 458.02,-361.96 462.29,-371.66 467.4,-366.88"/>
+</g>
+<!-- RIP_P&#45;&gt;Conf -->
+<g id="edge6" class="edge">
+<title>RIP_P-&gt;Conf</title>
+<path fill="none" stroke="black" d="M233.04,-514.21C245.72,-505.63 261.58,-494.9 277.32,-484.24"/>
+<polygon fill="black" stroke="black" points="278.99,-487.34 285.31,-478.84 275.06,-481.54 278.99,-487.34"/>
+</g>
+<!-- RIP_Q&#45;&gt;Conf_Q -->
+<g id="edge14" class="edge">
+<title>RIP_Q-&gt;Conf_Q</title>
+<path fill="none" stroke="black" d="M533.44,-514.43C532.89,-507.15 532.23,-498.29 531.55,-489.24"/>
+<polygon fill="black" stroke="black" points="535.04,-488.99 530.81,-479.28 528.06,-489.51 535.04,-488.99"/>
+</g>
+<!-- Ucalc -->
+<g id="node14" class="node">
+<title>Ucalc</title>
+<polygon fill="none" stroke="black" points="496.45,-272.4 371.06,-272.4 371.06,-235.6 496.45,-235.6 496.45,-272.4"/>
+<text xml:space="preserve" text-anchor="middle" x="433.76" y="-257.6" font-family="Helvetica,sans-Serif" font-size="12.00">Calculate difference:</text>
+<text xml:space="preserve" text-anchor="middle" x="433.76" y="-243.2" font-family="Helvetica,sans-Serif" font-size="12.00">U = P_w - Q_w</text>
+</g>
+<!-- Weight&#45;&gt;Ucalc -->
+<g id="edge8" class="edge">
+<title>Weight-&gt;Ucalc</title>
+<path fill="none" stroke="black" d="M433.76,-309C433.76,-301.11 433.76,-292.31 433.76,-284.15"/>
+<polygon fill="black" stroke="black" points="437.26,-284.34 433.76,-274.34 430.26,-284.34 437.26,-284.34"/>
+</g>
+<!-- Decide -->
+<g id="node15" class="node">
+<title>Decide</title>
+<polygon fill="none" stroke="black" points="433.76,-198.6 375.63,-180.6 433.76,-162.6 491.89,-180.6 433.76,-198.6"/>
+<text xml:space="preserve" text-anchor="middle" x="433.76" y="-177" font-family="Helvetica,sans-Serif" font-size="12.00">Is U &gt; 0?</text>
+</g>
+<!-- Ucalc&#45;&gt;Decide -->
+<g id="edge9" class="edge">
+<title>Ucalc-&gt;Decide</title>
+<path fill="none" stroke="black" d="M433.76,-235.35C433.76,-227.83 433.76,-218.85 433.76,-210.42"/>
+<polygon fill="black" stroke="black" points="437.26,-210.56 433.76,-200.56 430.26,-210.56 437.26,-210.56"/>
+</g>
+<!-- Switch -->
+<g id="node16" class="node">
+<title>Switch</title>
+<polygon fill="none" stroke="black" points="431.42,-109.8 368.09,-109.8 368.09,-73 431.42,-73 431.42,-109.8"/>
+<text xml:space="preserve" text-anchor="middle" x="399.76" y="-95" font-family="Helvetica,sans-Serif" font-size="12.00">SWITCH</text>
+<text xml:space="preserve" text-anchor="middle" x="399.76" y="-80.6" font-family="Helvetica,sans-Serif" font-size="12.00">(save P)</text>
+</g>
+<!-- Decide&#45;&gt;Switch -->
+<g id="edge17" class="edge">
+<title>Decide-&gt;Switch</title>
+<path fill="none" stroke="black" d="M427.68,-164.01C422.99,-151.99 416.38,-135.04 410.77,-120.64"/>
+<polygon fill="black" stroke="black" points="414.16,-119.72 407.27,-111.67 407.64,-122.26 414.16,-119.72"/>
+<text xml:space="preserve" text-anchor="middle" x="426.8" y="-132" font-family="Times,serif" font-size="14.00">no</text>
+</g>
+<!-- End -->
+<g id="node17" class="node">
+<title>End</title>
+<ellipse fill="none" stroke="black" cx="433.76" cy="-18" rx="27" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="433.76" y="-14.4" font-family="Helvetica,sans-Serif" font-size="12.00">End</text>
+</g>
+<!-- Decide&#45;&gt;End -->
+<g id="edge16" class="edge">
+<title>Decide-&gt;End</title>
+<path fill="none" stroke="black" d="M435.76,-162.88C436.43,-157.09 437.16,-150.56 437.76,-144.6 440.93,-112.91 442.81,-104.78 440.76,-73 440.22,-64.63 439.21,-55.58 438.13,-47.33"/>
+<polygon fill="black" stroke="black" points="441.6,-46.88 436.74,-37.47 434.67,-47.86 441.6,-46.88"/>
+<text xml:space="preserve" text-anchor="middle" x="450.95" y="-87.2" font-family="Times,serif" font-size="14.00">yes</text>
+</g>
+<!-- Switch&#45;&gt;End -->
+<g id="edge18" class="edge">
+<title>Switch-&gt;End</title>
+<path fill="none" stroke="black" d="M408.16,-72.75C412.06,-64.56 416.78,-54.65 421.1,-45.57"/>
+<polygon fill="black" stroke="black" points="424.13,-47.37 425.26,-36.83 417.81,-44.36 424.13,-47.37"/>
+</g>
+</g>
+</svg>
